@@ -1,4 +1,7 @@
-# Typescript Webpack
+# Calculator
+
+![demo](image.png)
+
 Install the packages:
  
 ```
