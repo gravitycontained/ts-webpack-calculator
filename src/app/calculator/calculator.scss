@@ -1,0 +1,82 @@
+.calculator-component {
+	padding: 8px;
+
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	width: fit-content;
+	gap: 16px;
+
+	.history {
+		width: fit-content;
+		min-width: 120px;
+		
+		background-color: oklch(0.22 0.00228 67.74);
+		border-radius: 4px;
+		padding: 8px;
+		overflow-y: auto;
+		height: 200px;
+
+		p {
+			line-height: 28px;
+			white-space: nowrap;
+			margin-inline-end: 32px;
+
+			margin-block: unset;
+	
+		}
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		width: fit-content;
+
+		gap: 16px;
+	}
+
+	.input {
+		font-weight: bold;
+
+		grid-row: 1;
+		grid-column: 1/span 3;
+	}
+
+	.digits {
+		grid-row: 2;
+
+		width: fit-content;
+
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(3, auto);
+		gap: 8px;
+
+		#button-0 {
+			grid-column: 2;
+		}
+	}
+
+	.operations {
+		grid-row: 2;
+
+		height: fit-content;
+
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		gap: 8px;
+	}
+
+	.actions {
+		grid-row: 2;
+
+		height: fit-content;
+
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		gap: 8px;
+
+		button {
+			min-width: 60px;
+		}
+	}
+}

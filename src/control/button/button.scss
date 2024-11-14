@@ -1,0 +1,28 @@
+.button-component {
+	button {
+		outline: none;
+		border: none;
+
+		min-width: 40px;
+		min-height: 40px;
+		
+		$color: oklch(45.2% 0 185.72);
+		background-color: #{$color};
+		color: oklch(0.95 0.00228 67.74);
+
+		border-radius: 4px;
+
+		transition: ease-in-out background-color 100ms;
+
+		@media (any-hover) {
+			&:hover, &:focus-visible {
+				cursor: pointer;
+				background-color: oklch(from $color calc(l + 0.08) c h);
+			}
+		}
+		&:active {
+			cursor: pointer;
+			background-color: oklch(from $color calc(l + 0.12) c h);
+		}
+	}
+}

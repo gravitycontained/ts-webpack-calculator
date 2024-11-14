@@ -7,8 +7,8 @@ import './input.scss';
 export class InputComponent
 extends BaseComponent
 {
-	protected label: UniqueIdElement<HTMLLabelElement>;
-	protected input: UniqueIdElement<HTMLInputElement>;
+	protected readonly label: UniqueIdElement<HTMLLabelElement>;
+	protected readonly input: UniqueIdElement<HTMLInputElement>;
 
 	public readonly onInput = new Subject<Nullable<string>>();
 
